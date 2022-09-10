@@ -8,7 +8,7 @@ function getInputFieldValueById(inputFieldId) {
     return inputFieldValue;}
 
     alert("please input a valid number");
-    return;
+    return "invaliid";
   
 }
 

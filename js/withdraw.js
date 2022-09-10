@@ -11,6 +11,9 @@
 
 document.getElementById("btn-withdraw").addEventListener("click", function () {
   const newWithdrawAmount = getInputFieldValueById("withdraw-field");
+  if(newWithdrawAmount === "invaliid"){
+    console.log(newWithdrawAmount)
+    return;}
   const previousWithdrawTotal = getTextElementValueById("withdraw-total");
   const newWithdrawTotal = previousWithdrawTotal + newWithdrawAmount;
   console.log(newWithdrawTotal)

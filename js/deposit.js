@@ -10,8 +10,8 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
     1. get previous deposit total by id
 
     */
-   if(newDepositAmount == undefined ) {
-    console.log(newDepositAmount)
+   if(newDepositAmount === "invaliid" ) {
+    // console.log(newDepositAmount)
     return;}
   const previousDepositTotal = getTextElementValueById("deposit-total");
 //  console.log(previousDepositTotal)
