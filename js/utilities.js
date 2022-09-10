@@ -3,12 +3,13 @@ function getInputFieldValueById(inputFieldId) {
   const inputFieldValueString = inputField.value;
   inputField.value = "";
   const inputFieldValue = parseFloat(inputFieldValueString);
-  // console.log(typeof inputFieldValueString)
-  if(inputFieldValue >0){
-    return inputFieldValue;}
-
+  // console.log(isNaN( inputFieldValueString))
+  if(isNaN( inputFieldValueString)){
     alert("please input a valid number");
-    return "invaliid";
+    return "invaliid";}
+    
+    return inputFieldValue;
+
   
 }
 
